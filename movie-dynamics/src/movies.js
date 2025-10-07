@@ -160,3 +160,5 @@ const movies = [
     actors: ["Christian Bale", "Hugh Jackman", "Scarlett Johansson"]
   }
 ];
+
+export default movies

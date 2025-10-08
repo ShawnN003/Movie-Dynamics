@@ -1,21 +1,22 @@
-export default function Moviecard(props){
-    let actorsList = props.actors;
-    const actors = actorsList.map((actor) => (
-        <li>{actor}</li>
-    )
+import MovieTitleCard from "./MovieTitleCard";
+import MovieBodyCard from "./MovieBodyCard";
 
-    
-)
-    return(
-        <main>
-            <div classname="movieCard">
-                <img src={props.img} alt="movieImg" />
-                <h2>{props.title}</h2>
-                <p>{props.genre}</p>
-                <p>{props.rating}</p>
-                <p>{props.director}</p>
-                <ul>{actors}</ul>
-            </div>
-        </main>
-    )
+export default function MovieCard(props){
+      
+  return(
+    <main>
+      <div className="movieCard">
+        <MovieTitleCard 
+          img={props.img}
+          title={props.title}
+        />
+        <MovieBodyCard
+          genre={props.genre}
+          rating={props.rating}
+          director={props.director}
+          actors={props.actors}
+        />
+      </div>
+    </main>
+  );
 }

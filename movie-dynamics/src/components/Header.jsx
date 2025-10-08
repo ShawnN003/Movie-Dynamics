@@ -1,7 +1,7 @@
-export default function Header(){
-    return(
-        <header>
-            <h1>Movies Terminal</h1>
-        </header>
-    )
+export default function Header() {
+  return(
+    <header>
+      <h1>Movies Terminal</h1>
+    </header>
+  );
 }

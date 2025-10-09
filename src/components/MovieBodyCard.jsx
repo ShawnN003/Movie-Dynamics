@@ -12,7 +12,7 @@ export default function MovieBodyCard(props) {
 
   return(
     <div className="movieBodyCard">
-      <a href="https://www.w3schools.com">{props.genre}</a>
+      <p>{props.genre}</p>
       <p>Rating: {props.rating} {getEmoji(props.rating)}</p>
       <p>{props.director}</p>
       <ul>{actors}</ul>

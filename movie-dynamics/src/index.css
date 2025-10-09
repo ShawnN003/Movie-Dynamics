@@ -28,8 +28,9 @@ main {
 .movieCard {
   justify-items: center;
   background-color: #333;
-  border-radius: 5px;
-  width: 300px;
+  border-radius: 10px;
+  border: 3px solid whitesmoke;
+  max-width: 300px;
 }
 
 .movieTitleCard {
@@ -40,7 +41,7 @@ main {
   width: 280px;
   height: 280px;
   border: 1px solid black;
-  border-radius: 50px;
+  border-radius: 20px;
   margin: .5rem;
 }
 

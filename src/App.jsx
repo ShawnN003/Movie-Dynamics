@@ -7,7 +7,7 @@ list.sort((a, b) => a.title.localeCompare(b.title));
 const movieList = list.map((movie) => {
   return (
       <MovieCard
-          img={movie.poster}
+          img={movie.img}
           title={movie.title}
           genre={movie.genre}
           rating={movie.rating}

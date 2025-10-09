@@ -1,7 +1,7 @@
 export default function MovieBodyCard(props) {
-  const actors = props.actors.map((actor) => (
+  const actors = props.actors.map((actor) => {
     <li key={actor}>{actor}</li>  
-  ));
+});
 
   const getEmoji = (rating) => {
     if (rating >= 9) return "⭐⭐⭐⭐";       
@@ -13,7 +13,7 @@ export default function MovieBodyCard(props) {
   return(
     <div className="movieBodyCard">
       <p>{props.genre}</p>
-      <p>Rating: {props.rating} {getEmoji(props.rating)}</p>
+      <p>Rating: {props.rating} {getEmoji(prop.rating)}</p>
       <p>{props.director}</p>
       <ul>{actors}</ul>
     </div>
